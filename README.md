@@ -1,5 +1,5 @@
 # Geth helm chart
-Basic helm chart to deploy a geth node in a Kubernetes environment. 
+Basic Helm chart to deploy a Geth node in a Kubernetes environment. 
 
 ## Install 
 `helm install <release-name> .`
