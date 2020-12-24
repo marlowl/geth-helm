@@ -1,0 +1,7 @@
+geth:
+  imagePullPolicy: IfNotPresent
+  image:
+    repository: ethereum/client-go
+    tag: stable
+  replicaCount: 1
+  storageClass: standard
