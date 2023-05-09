@@ -1,15 +1,15 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: {{ template "geth-node.name" . }}-service
+  name: {{ template "geth-helm.name" . }}-service
   labels:
-    app: {{ template "geth-node.name" . }}
-    chart: {{ template "geth-node.chart" . }}
+    app: {{ template "geth-helm.name" . }}
+    chart: {{ template "geth-helm.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   selector:
-    app: {{ template "geth-node.name" . }}
+    app: {{ template "geth-helm.name" . }}
     release: {{ .Release.Name }}
   type: ClusterIP
   ports:
