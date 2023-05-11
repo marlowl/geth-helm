@@ -4,4 +4,4 @@ geth:
     repository: ethereum/client-go
     tag: stable
   replicaCount: 1
-  storageClass: managed-premium-retain
+  storageClass: azurefile
