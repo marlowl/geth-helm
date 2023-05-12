@@ -51,7 +51,7 @@ spec:
     spec:
       storageClassName: {{ .Values.geth.storageClass }}
       accessModes:
-        - "ReadWriteMany"
+        - {{ .Values.geth.accessMode}}
       resources:
           requests:
-            storage: "500Gi"
+            storage: {{ .Values.geth.storage}}

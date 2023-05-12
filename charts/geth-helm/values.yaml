@@ -5,3 +5,5 @@ geth:
     tag: stable
   replicaCount: 1
   storageClass: azurefile
+  storage: 5GI
+  accessMode: ReadWriteMany
